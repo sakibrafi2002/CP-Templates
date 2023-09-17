@@ -1,30 +1,40 @@
 /* Bismillahir Rahmanir Raheem
-   In the Name of Allah—the Most Compassionate, Most Merciful.*/
+   In the Name of Allah , the Most Compassionate, Most Merciful.*/
 /* Author: _MUSAFIR_ */
 
 #include<bits/stdc++.h>
 using namespace std;
 
-#define     ll            long long int
-#define     ull           unsigned long long int
+
+typedef long long int ll;
+typedef pair<ll,ll> pll;
+typedef long double ld;
+
+
+
 #define     sz(n)         (int)(n).size()
 #define     testCase      ll tc;cin>>tc;while(tc--)
-#define     endl          "\n"
-#define     yes           cout << "YES" << endl
-#define     no            cout << "NO" << endl
+#define     endl          '\n'
+#define     YES           cout << "YES" << endl
+#define     NO            cout << "NO" << endl
+#define     Yes           cout << "Yes" << endl
+#define     No            cout << "No" << endl
+#define     ff            first
+#define     ss            second
 #define     pb            push_back
 #define     mp            make_pair
-#define     sp            setprecision
 #define     all(v)        v.begin(), v.end()
 #define     rall(v)       v.rbegin(), v.rend()
 #define     mxt(v)        *max_element(v.begin(),v.end())
 #define     mnt(v)        *min_element(v.begin(),v.end())
+#define     print(v)	  for(auto x : v)cout<<x<<' ';cout<<'\n';
 #define     optimize()    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define     PI            (2*acos(0))
+#define     sp(n,m)		  cout<<fixed<<setprecision(n)<<m<<endl
 #define     eps           1e-12
+#define     mod           1000000007
 
-
-
+// This template is only for debugging purposes...
 template < typename F, typename S >ostream& operator << ( ostream& os, const pair< F, S > & p ) {return os << "(" << p.first << ", " << p.second << ")";}
 template < typename T >ostream &operator << ( ostream & os, const vector< T > &v ) {os << "{";for(auto it = v.begin(); it != v.end(); ++it) {if( it != v.begin() ) os << ", ";os << *it;}return os << "}";}
 template < typename T >ostream &operator << ( ostream & os, const set< T > &v ) {os << "[";for(auto it = v.begin(); it != v.end(); ++it) {if( it != v.begin() ) os << ", ";os << *it;}return os << "]";}
@@ -52,6 +62,8 @@ double toRad(double X){return (PI * X) / 180.0;}
 double toDeg(double X){if(X < 0)X +=(2*PI);return ((180.0 * X)/PI);}
 double fixAngle(double A){return A > 1 ? 1 : (A < -1 ? -1 : A);}
 ll nCr(ll n,ll r){r=(n-r<=r) ? n-r : r;ll ans=1;for(ll i=0;i<r;i++){ans*=(n-i);ans/=(i+1);}return ans;}
+
+
 
 ///Binary Search for finding a number.
 /*      ll x,f=0;
@@ -95,13 +107,19 @@ ll nCr(ll n,ll r){r=(n-r<=r) ? n-r : r;ll ans=1;for(ll i=0;i<r;i++){ans*=(n-i);a
         cout << r << endl;
 */
 
+
+
+
 /*=========================================================================*/
+
+
 
 void Bismillah()
 {
-
+    
 
 }
+
 int main()
 {
     optimize();
@@ -110,6 +128,5 @@ int main()
 
     return 0;
 }
-
 
 
