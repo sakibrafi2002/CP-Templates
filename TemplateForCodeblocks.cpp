@@ -1,19 +1,19 @@
-/* Bismillahir Rahmanir Raheem
-   In the Name of Allah , the Most Compassionate, Most Merciful.*/
-/* Author: _MUSAFIR_ */
+/* Bismillahir Rahmanir Raheem  */
 
 #include<bits/stdc++.h>
 using namespace std;
 
 
-typedef long long int ll;
-typedef pair<ll,ll> pll;
-typedef long double ld;
+#include <ext/pb_ds/assoc_container.hpp> 
+#include <ext/pb_ds/tree_policy.hpp> 
+using namespace __gnu_pbds; 
 
+template <typename num_t>
+using ordered_set = tree<num_t, null_type, less_equal<num_t>, rb_tree_tag, tree_order_statistics_node_update>;
 
-
+#define     ll            long long int
+#define     ull           unsigned long long int
 #define     sz(n)         (int)(n).size()
-#define     testCase      ll tc;cin>>tc;while(tc--)
 #define     endl          '\n'
 #define     YES           cout << "YES" << endl
 #define     NO            cout << "NO" << endl
@@ -31,6 +31,7 @@ typedef long double ld;
 #define     optimize()    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define     PI            (2*acos(0))
 #define     sp(n,m)		  cout<<fixed<<setprecision(n)<<m<<endl
+#define     getunique(v)  {sort(v.begin(), v.end()); v.erase(unique(v.begin(), v.end()), v.end());}
 #define     eps           1e-12
 #define     mod           1000000007
 
@@ -63,70 +64,29 @@ double toDeg(double X){if(X < 0)X +=(2*PI);return ((180.0 * X)/PI);}
 double fixAngle(double A){return A > 1 ? 1 : (A < -1 ? -1 : A);}
 ll nCr(ll n,ll r){r=(n-r<=r) ? n-r : r;ll ans=1;for(ll i=0;i<r;i++){ans*=(n-i);ans/=(i+1);}return ans;}
 
+bool comp(pair <ll, ll> a, pair <ll, ll> b)
+{
+    if(a.first == b.first)	return a.second > b.second;
+    else	return a.first > b.first;
+}
+ 
+
+/*                 MUSAFIR                     */
 
 
-///Binary Search for finding a number.
-/*      ll x,f=0;
-        cin>>x;
-        ll l=0,r=n-1;
-        while(l<=r)
-        {
-            ll m = (l+r)/2;
-            if(a[m] == x){
-                f = 1;
-                break;
-            }
-            else if(x < a[m]) r = m-1;
-            else l = m+1;
-        }
-        if(f==1) cout<< "YES"<< endl;
-        else cout << "NO" << endl;
-*/
-
-/// Binary Search for finding Lower Bound
-/*      ll x;
-        cin >> x;
-        ll l = -1, r = n;
-        while (l + 1 < r){
-            ll m = (l + r) / 2;
-            if (x <= a[m]) r = m;
-            else l = m;
-        }
-        cout << r << endl;
-*/
-
-/// Binary Search for finding Upper Bound
-/*      ll x;
-        cin >> x;
-        ll l = -1, r = n;
-        while (l + 1 < r){
-            ll m = (l + r) / 2;
-            if (x < a[m]) r = m;
-            else l = m;
-        }
-        cout << r << endl;
-*/
-
-
-
-
-/*=========================================================================*/
-
-
-
-void Bismillah()
+void solve()
 {
     
-
 }
 
 int main()
 {
     optimize();
-    testCase
-        Bismillah();
+    ll tc=1;
+    cin>>tc;
+    for(int i=1; i<=tc; i++){
+	    solve();
+    }
 
     return 0;
 }
-
-
