@@ -6,6 +6,6 @@
 
 ## Graph Theory
 
-## Number Theory
+## [Number Theory](github.com/sakibrafi2002/CP-Templates/tree/main/Number%20Theory)
 
 - Prime factorization in O(sqrt(N))
